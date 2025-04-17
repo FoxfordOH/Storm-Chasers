@@ -427,7 +427,7 @@ GameObject:
   - component: {fileID: 1711932922}
   - component: {fileID: 1711932921}
   m_Layer: 0
-  m_Name: Triangle
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -445,6 +445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f88fc212542b2741abe2f29cbe61b97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 5.75
 --- !u!212 &1711932922
 SpriteRenderer:
   m_ObjectHideFlags: 0
