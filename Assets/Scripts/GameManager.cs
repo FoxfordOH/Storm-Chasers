@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        // player.transform.position = new Vector3(0.0f, 0.0f, 0.0f);
+    player.transform.position = new Vector3(0.0f, 0.0f, transform.position.z);
     }
 
     // Update is called once per frame
