@@ -23,4 +23,9 @@ public class GameManager : MonoBehaviour
     player.transform.position = new Vector3(0.0f, 0.0f, transform.position.z);
     StartMenu.SetActive(false);
     }    
+    
+    public void GameQuit()
+    {
+        Application.Quit();
+    }
 }
