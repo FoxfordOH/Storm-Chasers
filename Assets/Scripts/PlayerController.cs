@@ -5,10 +5,11 @@ public class PlayerController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     [SerializeField] private float speed = 5.75f;
+        private Animator Anim;
 
     void Start()
     {
-        
+        Anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -20,41 +21,36 @@ public class PlayerController : MonoBehaviour
     
 private void Move()
     {
-        //Vector3.right = Vector3(1, 0, 0)
-        //deltatime - convert from fps to actual seconds (delta = the change in time)
 
-        // local variable
-        // usable only in this block of code
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
-        //if(horizontalInput <0 = run this anim)
-        if(Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
+
+        if(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
         {
-            // Anim.SetBool("TurnLeft", true);
-            // Anim.SetBool("TurnRight", false);
+            Anim.SetBool("WalkUp", true);
+            Anim.SetBool("WalkDown", false);
         }
-        else if(Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.LeftArrow))
+        else if(Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.UpArrow))
         {
-            // Anim.SetBool("TurnLeft", false);
-            // Anim.SetBool("TurnRight", false);
+            Anim.SetBool("WalkUp", false);
+            Anim.SetBool("WalkDown", false);
     
         }
 
-        if(Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
+        if(Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
         {
-            // Anim.SetBool("TurnRight", true);
-            // Anim.SetBool("TurnLeft", false);
+            Anim.SetBool("WalkDown", true);
+            Anim.SetBool("WalkUp", false);
 
         }
-        else if(Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.RightArrow))
+        else if(Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.DownArrow))
         {
-            // Anim.SetBool("TurnRight", false);
-            // Anim.SetBool("TurnLeft", false);
+            Anim.SetBool("WalkDown", false);
+            Anim.SetBool("WalkUp", false);
     
         }
 
 
-        //Input.GetAxis gives -1...+1
         transform.Translate(Vector3.right * horizontalInput * speed * Time.deltaTime);
         transform.Translate(Vector3.up * verticalInput * speed * Time.deltaTime);
     }
