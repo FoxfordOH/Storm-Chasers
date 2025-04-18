@@ -4,7 +4,7 @@ public class Bullet : MonoBehaviour
 {
     public GameObject bullet;
     public Rigidbody2D bulletRB;
-    GameObject screenCenter;
+    public GameObject screenCenter;
     private float bulletSpeed = 20;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

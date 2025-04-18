@@ -22,6 +22,7 @@ public class GunManager : MonoBehaviour
 
 		if (Input.GetMouseButtonDown(0)) {
 			Instantiate(bulletPrefab, shootPoint.transform.position, this.transform.rotation);
+			Debug.Log("Fuck");
 		}
 	}
 
