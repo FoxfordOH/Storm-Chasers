@@ -20,10 +20,10 @@ public class Bullet : MonoBehaviour
         bulletRB.transform.Translate(Vector2.left * bulletSpeed * Time.deltaTime);
 
 // SET BOUNDS TO PLAYABLE AREA SIZE
-        if (bullet.transform.position.y > 5.8f + screenCenter.transform.position.y || 
-        bullet.transform.position.y < -4.2f + screenCenter.transform.position.y || 
-        bullet.transform.position.x > 8.65f + screenCenter.transform.position.x || 
-        bullet.transform.position.x < -9.15f + screenCenter.transform.position.x) {
+        if (bullet.transform.position.y > 7f + screenCenter.transform.position.y || 
+        bullet.transform.position.y < -6f + screenCenter.transform.position.y || 
+        bullet.transform.position.x > 10f + screenCenter.transform.position.x || 
+        bullet.transform.position.x < -11f + screenCenter.transform.position.x) {
             Destroy(bullet);
         }
     }
