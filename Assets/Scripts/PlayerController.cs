@@ -6,10 +6,12 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private float speed = 5.75f;
     private Animator Anim;
+    private SpriteRenderer spriteRenderer;
 
     void Start()
     {
         Anim = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -63,6 +65,7 @@ public class PlayerController : MonoBehaviour
             Anim.SetBool("WalkUp", false);
             Anim.SetBool("WalkRight", false);
             Anim.SetBool("WalkDown", false);
+            spriteRenderer.flipX = true;
 
         }
         else if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.LeftArrow))
@@ -71,6 +74,7 @@ public class PlayerController : MonoBehaviour
             Anim.SetBool("WalkDown", false);
             Anim.SetBool("WalkLeft", false);
             Anim.SetBool("WalkRight", false);
+            spriteRenderer.flipX = false;
 
         }
 
