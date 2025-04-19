@@ -66,5 +66,5 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj"
     },
-    "dotnet.defaultSolution": "Storm Chasers.sln"
+    "dotnet.defaultSolution": "Storm-Chasers.sln"
 }
