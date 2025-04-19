@@ -164,7 +164,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 255687990}
-  StartMenu: {fileID: 1344826320}
 --- !u!1001 &168775456
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -969,7 +968,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2065400640855997936, guid: 2ff36a583a8c9594e8065c2eef773864, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -3.2661843
+      value: -0.22
       objectReference: {fileID: 0}
     - target: {fileID: 2065400640855997936, guid: 2ff36a583a8c9594e8065c2eef773864, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
