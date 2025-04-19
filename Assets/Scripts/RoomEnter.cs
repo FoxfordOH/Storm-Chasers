@@ -1,10 +1,11 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RoomEnter : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
-    [SerializeField] private int roomID = 0; //0 = Sun Room, 1 = Wind Room, 2 = Water Room, 3 = Earth Room
+    [SerializeField] private int roomID = 0; //0 = Sun Room, 1 = Wind Room, 2 = Water Room, 3 = Wind Room
 
     void Start()
     {
@@ -32,20 +33,24 @@ public class RoomEnter : MonoBehaviour
                 if (roomID == 0)
                 {
                     Debug.Log("Entering The Sun Room" + "/Room ID: " + roomID);
+                    SceneManager.LoadScene("SunLevel");
                 }
 
                 else if (roomID == 1)
                 {
                     Debug.Log("Entering The Wind Room" + "/Room ID: " + roomID);
+                    SceneManager.LoadScene("WindLevel");
                 }
 
                 else if (roomID == 2)
                 {
                     Debug.Log("Entering The Water Room" + "/Room ID: " + roomID);
+                    SceneManager.LoadScene("WaterLevel");
                 }
                 else
                 {
-                    Debug.Log("Entering The Earth Room" + "/Room ID: " + roomID);
+                    Debug.Log("Entering The Snow Room" + "/Room ID: " + roomID);
+                    SceneManager.LoadScene("SnowLevel");
                 }
 
             }
