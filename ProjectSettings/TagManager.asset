@@ -8,6 +8,7 @@ TagManager:
   - bullet
   - Enemy
   - gunSource
+  - BossCamera
   layers:
   - Default
   - TransparentFX
