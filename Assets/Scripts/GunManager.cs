@@ -5,11 +5,12 @@ public class GunManager : MonoBehaviour
 {
 	public GameObject bulletPrefab;
 	public GameObject shootPoint;
+	public int gunDamage;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        gunDamage = 10;
     }
 
     // Update is called once per frame
@@ -22,7 +23,6 @@ public class GunManager : MonoBehaviour
 
 		if (Input.GetMouseButtonDown(0)) {
 			Instantiate(bulletPrefab, shootPoint.transform.position, this.transform.rotation);
-			Debug.Log("Fuck");
 		}
 	}
 
