@@ -1,14 +1,12 @@
-using NUnit.Framework.Interfaces;
 using UnityEngine;
-using UnityEngine.TextCore.LowLevel;
 
-public class Bullet : MonoBehaviour
+public class EnemyBullet : MonoBehaviour
 {
-    GameObject bullet;
+   GameObject bullet;
     GameObject gunManager;
     Rigidbody2D bulletRB;
     GameObject screenCenter;
-    [SerializeField] float bulletSpeed = 20;
+    [SerializeField] float bulletSpeed = 10;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -35,7 +33,7 @@ public class Bullet : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy")) {
+        if (collision.gameObject.CompareTag("Player")) {
             Destroy(bullet);
         }
     }

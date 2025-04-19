@@ -268,7 +268,7 @@ MonoBehaviour:
   height: 2
   canMove: 1
   maxSpeed: 4
-  gravity: {x: NaN, y: NaN, z: NaN}
+  gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -306,4 +306,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  target: {fileID: 6655361445507489912, guid: 5c80a495bd23d8541af32cdbbbc6ebc0, type: 3}
+  playerRef: {fileID: 0}
+  target: {fileID: 0}
