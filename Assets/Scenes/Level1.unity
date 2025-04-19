@@ -1516,7 +1516,6 @@ RectTransform:
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 <<<<<<< HEAD
-<<<<<<< HEAD
 --- !u!1001 &1578844088
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1614,8 +1613,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ff36a583a8c9594e8065c2eef773864, type: 3}
-=======
->>>>>>> parent of 7724122 (Merge pull request #7 from FoxfordOH/AStarWorkingBranch)
 =======
 >>>>>>> parent of 7724122 (Merge pull request #7 from FoxfordOH/AStarWorkingBranch)
 --- !u!1 &1743575732
