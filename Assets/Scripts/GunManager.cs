@@ -1,4 +1,3 @@
-using Unity.Mathematics;
 using UnityEngine;
 
 public class GunManager : MonoBehaviour
@@ -19,7 +18,8 @@ public class GunManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		if (bossCamera == null) {
+		if (bossCamera == null  || bossCamera.enabled == false)
+		{ {
 		Vector2 playerPos = Camera.main.WorldToViewportPoint (transform.position);
 		Vector2 mousePos = (Vector2)Camera.main.ScreenToViewportPoint(Input.mousePosition);
 		float angle = PointToward(playerPos, mousePos);
@@ -27,6 +27,7 @@ public class GunManager : MonoBehaviour
 
 		if (Input.GetMouseButtonDown(0)) {
 			Instantiate(bulletPrefab, shootPoint.transform.position, this.transform.rotation);
+		}
 		}
 		}
 		else

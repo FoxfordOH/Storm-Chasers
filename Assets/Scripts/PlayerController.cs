@@ -6,12 +6,12 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private float speed = 5.75f;
     private Animator Anim;
-    private SpriteRenderer spriteRenderer;
+    public float horizontalInput;
+    public float verticalInput;
 
     void Start()
     {
         Anim = GetComponent<Animator>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -24,8 +24,8 @@ public class PlayerController : MonoBehaviour
     private void Move()
     {
 
-        float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
+        horizontalInput = Input.GetAxis("Horizontal");
+        verticalInput = Input.GetAxis("Vertical");
 
         if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
         {
@@ -65,7 +65,6 @@ public class PlayerController : MonoBehaviour
             Anim.SetBool("WalkUp", false);
             Anim.SetBool("WalkRight", false);
             Anim.SetBool("WalkDown", false);
-            spriteRenderer.flipX = true;
 
         }
         else if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.LeftArrow))
@@ -74,7 +73,6 @@ public class PlayerController : MonoBehaviour
             Anim.SetBool("WalkDown", false);
             Anim.SetBool("WalkLeft", false);
             Anim.SetBool("WalkRight", false);
-            spriteRenderer.flipX = false;
 
         }
 

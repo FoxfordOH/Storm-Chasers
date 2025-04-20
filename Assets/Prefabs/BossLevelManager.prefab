@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4427614402426102533
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3257687385860921217}
+  - component: {fileID: 8251530295399259275}
+  m_Layer: 0
+  m_Name: BossLevelManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3257687385860921217
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4427614402426102533}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.4, y: 19.83, z: 5380.944}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8251530295399259275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4427614402426102533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10cefa3fb4e6b95498091a123f88c4c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FireEnemyPrefab: {fileID: 6964957584438471784, guid: 38f938b79907c9549bab2b630d7a4d1f, type: 3}
+  WindEnemyPrefab: {fileID: 4766630708711273905, guid: 8bbc13fdddb73184e862e51acb02c5c6, type: 3}
+  WaterEnemyPrefab: {fileID: 3335461063139353226, guid: 765d07244ffa1a241b7207624570a144, type: 3}
+  SnowEnemyPrefab: {fileID: 5531962681383277273, guid: c6eb0ee9488deb94fa58654bfb5f4704, type: 3}
+  SunBossPrefab: {fileID: 1262768641427905225, guid: 0cdca1f98339b3c4f8f9c1901e29f9a5, type: 3}
+  WindBossPrefab: {fileID: 1162103892093084843, guid: a95c52a7e45b1df45ba02594cc4cef2b, type: 3}
+  WaterBossPrefab: {fileID: 4382146253071753716, guid: f19ca23ba1c7c784da86caf9d950a179, type: 3}
+  SnowBossPrefab: {fileID: 7441583746852476815, guid: 65a53dafb511d134cb6ea75f9c1cc562, type: 3}
+  DoorRoomEnterPrefab: {fileID: 8199465948189352123, guid: 7ca0b3f247a597f429e5fa448a97f6a6, type: 3}
+  SunBossMusic: {fileID: 8300000, guid: ebb14fd6bee45084cadda81df2dfa0c2, type: 3}
+  SnowBossMusic: {fileID: 8300000, guid: 0486fa807242e644d9de1d3c7c2146ac, type: 3}
+  WindBossMusic: {fileID: 8300000, guid: 1c92e6db72d6f7e47b5d7f57b3a9220e, type: 3}
+  WaterBossMusic: {fileID: 8300000, guid: 0bda0128b2f7fc542afec7b6d60a42b5, type: 3}

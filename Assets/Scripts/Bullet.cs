@@ -1,6 +1,4 @@
-using NUnit.Framework.Interfaces;
 using UnityEngine;
-using UnityEngine.TextCore.LowLevel;
 
 public class Bullet : MonoBehaviour
 {
@@ -26,10 +24,10 @@ public class Bullet : MonoBehaviour
         bulletRB.transform.Translate(Vector2.left * bulletSpeed * Time.deltaTime);
 
 // SET BOUNDS TO PLAYABLE AREA SIZE (If that's what we do)
-        if (bullet.transform.position.y > 7f + screenCenter.transform.position.y || 
-        bullet.transform.position.y < -6f + screenCenter.transform.position.y || 
-        bullet.transform.position.x > 10f + screenCenter.transform.position.x || 
-        bullet.transform.position.x < -11f + screenCenter.transform.position.x) {
+        if (bullet.transform.position.y > 30f + screenCenter.transform.position.y || 
+        bullet.transform.position.y < -30f + screenCenter.transform.position.y || 
+        bullet.transform.position.x > 30f + screenCenter.transform.position.x || 
+        bullet.transform.position.x < -30f + screenCenter.transform.position.x) {
             Destroy(bullet);
         }
     }

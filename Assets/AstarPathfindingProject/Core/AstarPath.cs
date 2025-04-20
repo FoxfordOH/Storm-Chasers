@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
@@ -2161,3 +2162,5 @@ public class AstarPath : VersionedMonoBehaviour {
 		return nearestNode;
 	}
 }
+
+#endif

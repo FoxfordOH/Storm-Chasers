@@ -47,10 +47,15 @@ public class RoomEnter : MonoBehaviour
                     Debug.Log("Entering The Water Room" + "/Room ID: " + roomID);
                     SceneManager.LoadScene("WaterLevel");
                 }
-                else
+                else if (roomID == 3)
                 {
                     Debug.Log("Entering The Snow Room" + "/Room ID: " + roomID);
                     SceneManager.LoadScene("SnowLevel");
+                }
+                else
+                {
+                    Debug.Log("Entering The Door Room" + "/Room ID: " + roomID);
+                    SceneManager.LoadScene("Level1");
                 }
 
             }

@@ -9,6 +9,14 @@ TagManager:
   - Enemy
   - gunSource
   - BossCamera
+  - Boss
+  - SunBeam
+  - SunRotate
+  - SunSprite
+  - Wind Boss
+  - SnowBoss
+  - SnowBullet
+  - WaterBoss
   layers:
   - Default
   - TransparentFX
