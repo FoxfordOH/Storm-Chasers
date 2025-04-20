@@ -6,6 +6,8 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private float speed = 5.75f;
     private Animator Anim;
+    public float horizontalInput;
+    public float verticalInput;
 
     void Start()
     {
@@ -22,8 +24,8 @@ public class PlayerController : MonoBehaviour
     private void Move()
     {
 
-        float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
+        horizontalInput = Input.GetAxis("Horizontal");
+        verticalInput = Input.GetAxis("Vertical");
 
         if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
         {

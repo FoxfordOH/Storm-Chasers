@@ -10,11 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 56b1237a337efbb4083a1c40e4f55c6b, type: 3}
-  m_Name: SmallEnemy
+  m_Name: WaterEnemy
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 8315607287869141882, guid: 2ff36a583a8c9594e8065c2eef773864, type: 3}
-  enemyHealthBar: {fileID: 1835968980095161445, guid: 2ff36a583a8c9594e8065c2eef773864, type: 3}
-  enemyAnimation: {fileID: 6622995325208074514, guid: 2ff36a583a8c9594e8065c2eef773864, type: 3}
   enemyHealth: 50
   enemyAtkDmg: 50
-  enemySpeed: 80
+  enemySpeed: 90
